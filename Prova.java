@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Prova {
     /*
     a. Cadastrar questões (a primeira questão inserida corresponde a primeira questão da
@@ -8,8 +6,15 @@ public class Prova {
     informado ou null caso a questão não existir;
     c. Remover uma questão (pelo número da questão);
     d. Exibir a prova (exibindo todas as questões numeradas e em ordem).
-
     */
 
-    private ArrayList <Question> questoes;
+    private ArrayList <Question> listaQ;
+
+    public void inserir(Question question) { //cadastro de questões
+        listaQ.add(question);
+     }
+
+    public Question pesquisar(int num) {
+            return listaQ.get(num-1);    
+    }
 }
