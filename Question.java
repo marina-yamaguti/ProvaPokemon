@@ -20,7 +20,7 @@ public class Question{
      @param questionText the text of this question
      */
     public void setText(String questionText){
-        text = questionText;
+        text += questionText + "\n";
     }
 
     /**
